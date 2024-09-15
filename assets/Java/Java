@@ -1,0 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    typeWriter(elemento);
+    cost texto = elemento.innerHTML;
+    elemento.innerHTML = '';
+
+    texto.split("").forEach((letra, i) => {
+        setTimeout(() => {
+            elemento.innerHtML += letra;
+        }, 100 * i);
+    });
+});
+
+
+cosnt links = document.querySelectorAll('.apresentaçao_links');
+
+Links.forEach(link => {
+    link.addEventListener('mouseover', function() {
+        Link.style.backgroundColor = '#c81111';
+        link.style.color = '#f6f6f6';
+
+    })
+})
